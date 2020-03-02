@@ -1,5 +1,8 @@
 from django.contrib import admin
-import models
-# Register your models here.
-admin.site.register(models.BookInfo)
-admin.site.regester(models.HeroInfo)
+from .models   import  BookInfo
+from .models   import  HeroInfo
+# # Register your models here.
+admin.site.register(BookInfo)
+admin.site.register(HeroInfo)
+
+
